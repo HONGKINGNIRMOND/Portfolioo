@@ -35,21 +35,21 @@ const ContactPage: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
         // Security validation
         if (!validateFormData(formData)) {
             setStatus('Invalid input detected. Please check your message.');
             setTimeout(() => setStatus(''), 5000);
             return;
         }
-        
+
         // Email validation
         if (!validateEmail(formData.email)) {
             setStatus('Please enter a valid email address.');
             setTimeout(() => setStatus(''), 5000);
             return;
         }
-        
+
         // Here you would typically send the form data to a backend service
         console.log('Form submitted:', formData);
         setStatus('Thank you for your message! I will get back to you soon.');
@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
     return (
         <section id="contact" className="py-20 bg-light-bg-alt dark:bg-dark-bg-alt">
             <div className="container mx-auto px-6">
-                <motion.h2 
+                <motion.h2
                     className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-12"
                     variants={titleVariants}
                     initial="hidden"
@@ -69,7 +69,7 @@ const ContactPage: React.FC = () => {
                 >
                     Get In Touch
                 </motion.h2>
-                <motion.div 
+                <motion.div
                     className="max-w-lg mx-auto card-3d"
                     variants={formContainerVariants}
                     initial="hidden"
@@ -123,15 +123,15 @@ const ContactPage: React.FC = () => {
                         </motion.div>
                     </form>
                     {status && <p className="mt-4 text-center text-green-600 dark:text-green-400">{status}</p>}
-                     <motion.div className="text-center mt-12" variants={formItemVariants}>
+                    <motion.div className="text-center mt-12" variants={formItemVariants}>
                         <p className="text-light-text-alt dark:text-dark-text-alt mb-4">
                             You can also reach me directly via email or find me on other platforms.
                         </p>
-                        <a href="mailto:ragulnoty@gmail.com" className="inline-flex items-center gap-2 text-light-primary dark:text-dark-primary hover:underline text-lg">
-                           <EmailIcon className="w-6 h-6" />
-                           <span>ragulnoty@gmail.com</span>
+                        <a href="mailto:ragulvaidya21@gmail.com" className="inline-flex items-center gap-2 text-light-primary dark:text-dark-primary hover:underline text-lg">
+                            <EmailIcon className="w-6 h-6" />
+                            <span>ragulvaidya21@gmail.com</span>
                         </a>
-                       
+
                     </motion.div>
                 </motion.div>
             </div>
