@@ -1,4 +1,4 @@
-# 🚀 Full Stack Developer Portfolio
+# 🚀  Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite. Features 3D animations, security features, and a beautiful UI.
 
@@ -18,8 +18,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Vite. F
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion 11.2.10
 - **Security**: Custom security utilities and headers
-
-## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
