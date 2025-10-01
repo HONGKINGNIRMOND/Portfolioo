@@ -46,7 +46,7 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
         >
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-12">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-12 text-3d">
                     About Me
                 </h2>
                 <div className="max-w-3xl mx-auto text-center">
@@ -66,7 +66,7 @@ const AboutSection: React.FC = () => {
                         {techIcons.map(({ Icon, name }, index) => (
                             <motion.div 
                                 key={name} 
-                                className="group flex flex-col items-center gap-2 rotate-3d"
+                                className="group flex flex-col items-center gap-2 pop-3d"
                                 variants={iconVariants}
                                 whileHover={{ 
                                     scale: 1.2, 

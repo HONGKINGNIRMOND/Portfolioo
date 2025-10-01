@@ -59,7 +59,7 @@ const containerVariants: Variants = {
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     return (
         <motion.div
-            className="bg-light-bg-alt dark:bg-dark-bg-alt rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl flex flex-col card-3d"
+            className="bg-light-bg-alt dark:bg-dark-bg-alt rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl flex flex-col card-3d-enhanced glow-enhanced"
             variants={cardVariants}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
         >
@@ -104,7 +104,7 @@ const ProjectsSection: React.FC = () => {
         <section id="projects" className="py-20 bg-light-bg dark:bg-dark-bg">
             <div className="container mx-auto px-6">
                 <motion.h2
-                    className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-12"
+                    className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-12 text-3d"
                     variants={titleVariants}
                     initial="hidden"
                     whileInView="visible"

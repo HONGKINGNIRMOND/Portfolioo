@@ -40,7 +40,7 @@ const timelineContainerVariants: Variants = {
 
 const TimelineItem: React.FC<{ experience: Experience; isLast: boolean }> = ({ experience, isLast }) => (
     <motion.div 
-        className="relative pl-12 pb-12"
+        className="relative pl-12 pb-12 lift-3d"
         variants={timelineItemVariants}
     >
         {/* Timeline Dot */}
@@ -67,7 +67,7 @@ const ExperienceSection: React.FC = () => {
         <section id="education" className="py-20 bg-light-bg dark:bg-dark-bg">
             <div className="container mx-auto px-6">
                 <motion.h2 
-                    className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-16"
+                    className="text-3xl md:text-4xl font-display font-bold text-center text-slate-800 dark:text-white mb-16 text-3d"
                     variants={titleVariants}
                     initial="hidden"
                     whileInView="visible"

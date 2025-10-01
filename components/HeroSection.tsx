@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
                             View Projects <ArrowRightIcon className="w-5 h-5" />
                         </a>
                         <a
-                            href="/resume.pdf"
+                            href="/public/my resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 bg-light-bg-alt dark:bg-dark-bg-alt text-light-text dark:text-dark-text font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 btn-3d"

@@ -232,4 +232,134 @@ a:focus {
   50% {
     opacity: 0.7;
   }
+}
+
+/* Enhanced 3D Card Effects */
+.card-3d-enhanced {
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-3d-enhanced:hover {
+  transform: translateY(-15px) rotateX(8deg) rotateY(8deg) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 0 30px rgba(249, 115, 22, 0.2);
+}
+
+/* 3D Tilt Effect */
+.tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.tilt-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(10deg) translateZ(20px);
+}
+
+/* Deep Shadow 3D */
+.shadow-3d {
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.shadow-3d:hover {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 16px 32px rgba(0, 0, 0, 0.1),
+    0 32px 64px rgba(0, 0, 0, 0.1);
+}
+
+/* 3D Text Effect */
+.text-3d {
+  text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.1),
+    2px 2px 0px rgba(0, 0, 0, 0.1),
+    3px 3px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Lift Effect */
+.lift-3d {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.lift-3d:hover {
+  transform: translateY(-8px) translateZ(10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Rotate on Hover */
+.rotate-hover {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.rotate-hover:hover {
+  transform: rotateY(360deg);
+}
+
+/* Pop Effect */
+.pop-3d {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pop-3d:hover {
+  transform: scale(1.1) translateZ(20px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Flip Card Effect */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Layered 3D */
+.layer-3d {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.layer-3d::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
+  background: inherit;
+  opacity: 0.3;
+  transform: translateZ(-10px);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Glow Enhanced */
+.glow-enhanced {
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.glow-enhanced:hover {
+  box-shadow: 
+    0 0 20px rgba(249, 115, 22, 0.4),
+    0 0 40px rgba(249, 115, 22, 0.2),
+    0 0 60px rgba(249, 115, 22, 0.1);
+  transform: translateY(-5px);
 } 
