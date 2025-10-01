@@ -88,7 +88,7 @@ const ResumeSection: React.FC = () => {
                         <div className="text-center">
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="/resume.pdf"
+                                    href="public/my_resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 bg-light-primary dark:bg-dark-primary text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-light-primary-hover dark:hover:bg-dark-primary-hover transform hover:-translate-y-1 transition-all duration-300"
@@ -97,7 +97,7 @@ const ResumeSection: React.FC = () => {
                                     Download Resume (PDF)
                                 </a>
                                 <a
-                                    href="/resume.pdf"
+                                    href="public/my_resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 transform hover:-translate-y-1 transition-all duration-300 border border-light-border dark:border-dark-border"
